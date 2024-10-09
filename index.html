@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Document</title>
-  </head>
-  <body>
- 
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <form action="https://httpbin.org/anything" method="POST">
+
+    <h2>Registreringsformulär</h2>
+
+    <fieldset>
+      <label for="firstname">Firstname:</label>
+      <input type="text" id="firstname" name="firstname" required>
+    </fieldset>
+
+    <fieldset>
+      <label for="lastname">Lastname:</label>
+      <input type="text" id="lastname" name="lastname" required>
+    </fieldset>
+
+    <fieldset>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+      <label for="message"></label>
+      <textarea name="message" id="message"></textarea>
+    </fieldset>
+
+
+
+    <button type="submit">Skicka</button>
+  </form>
+
+</body>
+
 </html>
